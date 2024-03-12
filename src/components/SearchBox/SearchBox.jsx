@@ -2,7 +2,7 @@ import { useId } from "react";
 
 import styles from "./SearchBox.module.css";
 
-const SearchBox = ({ filterUserData, value }) => {
+export default function SearchBox({ filterUserData, value }) {
   const searchId = useId();
 
   return (
@@ -17,6 +17,4 @@ const SearchBox = ({ filterUserData, value }) => {
       />
     </div>
   );
-};
-
-export default SearchBox;
+}

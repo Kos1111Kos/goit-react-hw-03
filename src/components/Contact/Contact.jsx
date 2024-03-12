@@ -2,7 +2,7 @@ import { FaUserNinja } from "react-icons/fa6";
 import { BiSolidPhone } from "react-icons/bi";
 import styles from "./Contact.module.css";
 
-const Contact = ({ contacts, deleteContact }) => {
+export default function Contacts({ contacts, deleteContact }) {
   return contacts.map(({ id, name, number }) => {
     return (
       <li
@@ -27,6 +27,4 @@ const Contact = ({ contacts, deleteContact }) => {
       </li>
     );
   });
-};
-
-export default Contact;
+}
