@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  align-items: flex-start;
 }
 
 h1 {
@@ -47,7 +48,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #c5c8f4;
 }
 button:focus,
 button:focus-visible {
@@ -56,13 +57,13 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #1a1314;
+    background-color: #d5dff2;
   }
   a:hover {
-    color: #747bff;
+    color: #e6efc1;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f0efd1e4;
   }
 }
