@@ -66,7 +66,7 @@ function App() {
     <div className={styles.appContainer}>
       <h1>Phonebook</h1>
       {/* Компонент формы добавления контакта */}
-      <ContactForm addUser={addContact} />
+      <ContactForm onAdd={addContact} />
       {/* Компонент для поиска контактов */}
       <SearchBox filterUserData={setSearchValue} value={searchValue} />
       {/* Компонент списка контактов */}

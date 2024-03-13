@@ -2,6 +2,7 @@ import { FaUserNinja } from "react-icons/fa6";
 import { BiSolidPhone } from "react-icons/bi";
 import styles from "./Contact.module.css";
 
+// Компонент Contacts принимает список контактов и функцию deleteContact для удаления контакта
 export default function Contacts({ contacts, deleteContact }) {
   return (
     <ul>

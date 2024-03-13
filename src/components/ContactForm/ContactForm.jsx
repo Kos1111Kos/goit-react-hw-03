@@ -6,7 +6,7 @@ import clsx from "clsx"; // Імпорт класу для умовного до
 
 import styles from "./ContactForm.module.css"; // Імпорт стилів для компоненту ContactForm
 
-const ContactForm = ({ addUser }) => {
+const ContactForm = ({ onAdd }) => {
   // Валідація даних форми
   const dataValidationSchema = Yup.object().shape({
     username: Yup.string()
@@ -34,7 +34,7 @@ const ContactForm = ({ addUser }) => {
         username: "",
         phoneNumber: "",
       }}
-      onSubmit={addUser} // Обробник подання форми
+      onSubmit={onAdd} // Обробник подання форми
       validationSchema={dataValidationSchema} // Валідація форми за допомогою Yup
     >
       <Form className={styles.addContactForm}>
