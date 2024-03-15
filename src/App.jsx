@@ -21,9 +21,7 @@ function App() {
   const [searchValue, setSearchValue] = useState("");
 
   // Функция для удаления контакта
-  const deleteContact = (id, evt) => {
-    if (evt.target.nodeName !== "BUTTON") return;
-
+  const deleteContact = (id) => {
     setContacts((prevState) =>
       prevState.filter((singleUser) => singleUser.id !== id)
     );
